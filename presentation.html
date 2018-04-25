@@ -36,7 +36,9 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
       }
     </script>
-
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
     <!--[if lt IE 9]>
       <script src="lib/js/html5shiv.js"></script>
       <![endif]-->
@@ -57,42 +59,58 @@
         </section>
 
         <section>
-          <h2>How did we get the data?</h2>
+          <h2>Motivation</h2>
+          <h4>Why Music Suggestion System?</h4>
           <ul>
-            <li>Kaggle</li>
-            <li>Las Vegas mass shooting</li>
-            <li>Question:</li>
-              <p>Can we find patterns from the mass shooting cases, so that we can prevent it from happening?</p>
+            <li>Build off of previous labs</li>
+            <li>Spotify & Pandora</li>
           </ul>
         </section>
 
         <section>
-            <h2>Data set introduction</h2>
-            <p><b class="orange">Including:</b></p>
-            <p>ID, Title, City, State, Date, Summary,	Fatalities,	Injured, Total victims,	Mental Health Issues,	Race,	Gender,	Latitude,	Longitude</p>
-        </section>
-
-        <section>
-          <section>
-            <h2>Prehandleing</h2>
-            <p><b class="orange">1.</b> Missing location information</p>
-            <p><b class="orange">2.</b> Title difficult to unerstand</p>
-            <p><b class="orange">3.</b> Data not tiddy</p>
-          </section>
-          <section data-background-transition="none" data-background="images/data.png">
-          </section>
-          <section data-background-transition="none" data-background="images/tiddy.png">
-          </section>
-        </section>
-
-        <section>
-          <h2>Data details</h2>
-          <p>Source: Mass shooting data(1966 - 2017)</p>
+          <h2>Algorithms</h2>
           <ul>
-            <li>Chosen from Kaggle website.</li>
-            <li>Definition of Mass shooting: greater than or equal to three victims.</li>
-            <li>Goal:  </li>
+            <li>Memory-based</li>
+            <p>$$cos(A) = \frac{\vec a \cdot \vec b} {|\vec a| \times |\vec b|}$$</p>
+            <li>Model-based</li>
+            <p>$$R_{user,song}= Q_{user,factor} P^T_{factor,song}$$</p>
           </ul>
+        </section>
+
+        <section>
+            <h2>Background/Overview</h2>
+            <p>Repository structure overview</p>
+        </section>
+
+        <section data-background-transition="none" data-background="images/structure.jpg"></section>
+
+        <section>
+          <h2>Like List</h2>
+        </section>
+
+        <section>
+          <h2>Explore</h2>
+        </section>
+
+        <section>
+          <h2>suggestion</h2>
+        </section>
+
+        <section>
+          <h2>Efficiency</h2>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+        </section>
+
+        <section data-background-transition="none" data-background="images/implementation.jpg" style="background: rgba(29,31,33,0.9)">
+          <h2>Implementation</h2>
+          <p><b class="orange">.</b></p>
+          <p><b class="orange">.</b></p>
+          <p><b class="orange">.</b></p>
+          <p>Do you have any questions?</p>
+          <br/><a title="Flickr API shell script" href="https://flickr.com/photos/christiaancolen/27635346150">Flickr API shell script</a> flickr photo by <a href="https://flickr.com/people/christiaancolen">Christiaan Colen</a> shared under a <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative Commons (BY-SA) license</a> </small>
         </section>
 
         <section>
@@ -104,65 +122,6 @@
           </code></pre>
         </section>
 
-        <section data-background-transition="none" data-background="images/map.png">
-        </section>
-
-        <section data-background-transition="none" data-background="images/map1.png">
-        </section>
-
-        <section data-background-transition="none" data-background="images/max.png" style="background: rgba(29,31,33,0.9)">
-          <p>The greatest number of victims in each state.</p>
-        </section>
-
-        <section data-background-transition="none" data-background="images/min.png" style="background: rgba(29,31,33,0.9)">
-          <p>The minimum number of victims in each state.</p>
-        </section>
-
-        <section data-background-transition="none" data-background="images/color.jpg" style="background: rgba(29,31,33,0.9)">
-          <h2>2nd Question:</h2>
-          <p><b class="orange">The Same Victims?</b></p>
-          <p>As the picture shows, Florida & Texas has the similar color</p>
-        </section>
-
-        <section data-background-transition="none" data-background="images/filter.png" style="background: rgba(29,31,33,0.9)">
-          <h2>Filter the data</h2>
-          <ul>
-            <li>Left only Florida and Texas</li>
-            <li>Add all the victim from each year together</li>
-          </ul>
-        </section>
-
-        <section data-background-transition="none" data-background="images/ttest.jpg" style="background: rgba(29,31,33,0.9)">
-          <h2>T-Test</h2>
-          <ul>
-            <li>P-Value ≈ 1</li>
-            <li>Those two states almost have the same Victims</li>
-          </ul>
-          </section>
-
-        <section>
-          <section>
-          <h2>Does mass shooting has any relationship with the age of shooter?</h2>
-          </section>
-          <section data-background-transition="none" data-background="images/agecut.png">
-          </section>
-        </section>
-
-        <section>
-          <section>
-          <h2>Does mass shooting has any relationship with the mental state of shooter?</h2>
-          </section>
-          <section data-background-transition="none" data-background="images/mental.png">
-          </section>
-        </section>
-
-        <section>
-          <section>
-          <h2>Conbind together</h2>
-          </section>
-          <section data-background-transition="none" data-background="images/ageMental.png">
-          </section>
-        </section>
 
       </div>
 
@@ -181,7 +140,10 @@
           mouseWheel: true,
           theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
           transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none/none
-
+          math: {
+		      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+	      	config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	        },
           // Parallax scrolling
           // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
           // parallaxBackgroundSize: '2100px 900px',
@@ -193,7 +155,8 @@
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/math/math.js', async: true }
           ]
         });
 
