@@ -56,74 +56,149 @@
               <h2>CS 250 Final Project</h2>
               <p>Matt Jones, Travis Thomas, Xingbang Liu</p>
               <br/><a title="suggestions" href="https://flickr.com/photos/jurgenappelo/11925703914">suggestions</a> flickr photo by <a href="https://flickr.com/people/jurgenappelo">Jurgen Appelo</a> shared under a <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons (BY) license</a> </small>
+
+              <aside class="notes">
+    						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    					</aside>
         </section>
 
-        <section>
+        <section data-background-transition="none" data-background="images/spotify.png" style="background: rgba(29,31,33,0.9)">
           <h2>Motivation</h2>
           <h4>Why Music Suggestion System?</h4>
           <ul>
             <li>Build off of previous labs</li>
             <li>Spotify & Pandora</li>
           </ul>
+
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section>
           <h2>Algorithms</h2>
+          <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative filtering</a>
+
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+        </section>
+
+        <section>
           <ul>
             <li>Memory-based</li>
             <p>$$cos(A) = \frac{\vec a \cdot \vec b} {|\vec a| \times |\vec b|}$$</p>
             <li>Model-based</li>
             <p>$$R_{user,song}= Q_{user,factor} P^T_{factor,song}$$</p>
           </ul>
+
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section>
             <h2>Background/Overview</h2>
             <p>Repository structure overview</p>
+
+            <aside class="notes">
+  						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+  					</aside>
         </section>
 
-        <section data-background-transition="none" data-background="images/structure.jpg"></section>
+        <section data-background-transition="none" data-background="images/structure.jpg">
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+        </section>
 
         <section>
           <h2>Like List</h2>
+          <ul>
+            <li>liked.csv</li>
+            <li>BufferedReader</li>
+            <li>Prompt out titles</li>
+            <li>
+              <pre><code class="hljs">String[] Songs = line.split(cvsSplitBy);</code></pre>
+            </li>
+            <li>Sort by int(bubble sort) or String(exchange sort)</li>
+          </ul>
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section>
           <h2>Explore</h2>
+          <ul>
+            <li>Store our Cloud list (music.csv) into a 2D ArrayList</li>
+            <li>Songs<>(String) in exploreSongs<>(String)</li>
+            <li>randomly pick 5 songs</li>
+            <li>if user likes, then update "y" (in music.csv) by using BufferedWriter</li>
+            <li>add line to liked.csv by using FileWriter</li>
+          </ul>
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section>
-          <h2>suggestion</h2>
+          <h2>Music Suggestion</h2>
+          <ul>
+            <li>Not done yet</li>
+            <li>Melody score (1-10 representing speed)</li>
+            <li>Calculate mean score from liked.csv</li>
+            <li>Linear search in music.csv</li>
+            <li>Randomly select 2 songs</li>
+          </ul>
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section>
-          <h2>Efficiency</h2>
+          <h2>Math Evaluation</h2>
+          <ul>
+          <li>By running<pre><code class="hljs">System.nanoTime()</code></pre>four times, I got:</li>
+          <li><table>
+            <thead><tr><th>in nano seconds</th><th>bubble sort</th><th>exchange sort</th></tr></thead>
+            <tbody>
+              <tr><td>1.</td><td>186,525</td><td>106,856</td></tr>
+              <tr><td>2.</td><td>156,695</td><td>111,009</td></tr>
+              <tr><td>3.</td><td>156,318</td><td>110,631</td></tr>
+              <tr><td>4.</td><td>239,386</td><td>110,254</td></tr>
+              <tr><td>mean</td><td>184,731</td><td>109,688</td></tr>
+            </tbody>
+          </table></li>
+        </ul>
         </section>
 
         <section>
           <h2>Conclusion</h2>
+          <ul>
+            <li>Making good progress</li>
+            <li>inheritance - Package</li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
 
         <section data-background-transition="none" data-background="images/implementation.jpg" style="background: rgba(29,31,33,0.9)">
-          <h2>Implementation</h2>
-          <p><b class="orange">.</b></p>
-          <p><b class="orange">.</b></p>
-          <p><b class="orange">.</b></p>
-          <p>Do you have any questions?</p>
+          <h2>Do you have any questions?</h2>
+          <p><b class="orange">. . .</b></p>
           <br/><a title="Flickr API shell script" href="https://flickr.com/photos/christiaancolen/27635346150">Flickr API shell script</a> flickr photo by <a href="https://flickr.com/people/christiaancolen">Christiaan Colen</a> shared under a <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative Commons (BY-SA) license</a> </small>
-        </section>
 
-        <section>
-          <h2>1st Question:</h2>
-          <p><b class="orange">How can we use maps to analyze the data?</b></p>
-          <pre><code class="hljs">
-            Abandon dot plotting <- Too messy
-            New library(maps) and library(ggmap)
-          </code></pre>
+          <aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
         </section>
-
 
       </div>
+    </div>
 
       <script src="lib/js/head.min.js"></script>
       <script src="js/reveal.min.js"></script>
@@ -165,8 +240,8 @@ window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, fals
 
 function handleClick(e) {
   e.preventDefault();
-  if(e.button === 0) Reveal.next();
-  if(e.button === 2) Reveal.prev();
+  if(e.button === 3) Reveal.next();
+  if(e.button === 4) Reveal.prev();
 }
 
       </script>
